@@ -1,4 +1,11 @@
 <template>
+  <!-- <div id="app">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view/>
+  </div> -->
     <div id="app">
         <el-container>
             <el-header>Header</el-header>
@@ -8,6 +15,7 @@
                 </el-aside>
                 <el-container>
                     <MianContent/>
+                    <!-- <router-view/> -->
                     <el-footer>Vinette Pang</el-footer>
                 </el-container>
             </el-container>
