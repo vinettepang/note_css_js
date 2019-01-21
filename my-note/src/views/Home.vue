@@ -1,18 +1,37 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <el-main>
+        <el-row>
+            <el-col :span="20">
+                <el-card shadow="hover">
+                    home 鼠标悬浮时显示
+                </el-card>
+            </el-col>
+        </el-row>
+        <el-row>
+            <el-col :span="8">
+            </el-col>
+            <el-col :span="16">
+                <div class="grid-content bg-purple-light"></div>
+            </el-col>
+        </el-row>
+        <el-row>
+            <el-col :span="12">
+                <div class="grid-content bg-purple"></div>
+            </el-col>
+            <el-col :span="12">
+                <div class="grid-content bg-purple-light"></div>
+            </el-col>
+        </el-row>
+    </el-main>
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
+    name: 'Home',
+    props: {},
+    methods: {
+    }
 }
 </script>
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+</style>

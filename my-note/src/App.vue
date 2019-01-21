@@ -4,7 +4,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <router-view/>
+    <router-view></router-view>
   </div> -->
     <div id="app">
         <el-container>
@@ -14,8 +14,8 @@
                     <Side />
                 </el-aside>
                 <el-container>
-                    <MianContent/>
-                    <!-- <router-view/> -->
+                    <!-- <MianContent/> -->
+                    <el-main><router-view /></el-main>
                     <el-footer>Vinette Pang</el-footer>
                 </el-container>
             </el-container>

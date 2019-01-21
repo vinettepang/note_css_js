@@ -5,10 +5,22 @@
                 <i class="el-icon-location"></i>
                 <span>CSS - 收集</span>
             </template>
-            <router-link to="/">Home</router-link> |
-            <router-link to="/about">About</router-link>
-            <el-menu-item index="1-1">学习收集</el-menu-item>
-            <el-menu-item index="1-2">日常收集</el-menu-item>
+            <router-link to="/">
+                <el-menu-item index="1-1">
+                    学习收集
+                </el-menu-item>
+            </router-link>
+            <router-link to="/about">
+                <el-menu-item index="1-2">
+                    日常收集
+                </el-menu-item>
+            </router-link>
+            <!-- <el-menu-item index="1-1">
+                学习收集
+            </el-menu-item>
+            <el-menu-item index="1-2">
+                日常收集
+            </el-menu-item> -->
             <el-menu-item index="1-3">旧合集</el-menu-item>
             <!-- <el-menu-item-group>
                 <template slot="title">学习收集</template>
@@ -59,5 +71,9 @@ export default {
 .el-menu-vertical-demo{
    height: 100%;
    text-align: left;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
 }
 </style>
